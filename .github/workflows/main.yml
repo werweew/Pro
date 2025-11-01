@@ -55,7 +55,9 @@ jobs:
           if [ -f requirements.txt ]; then
             pip install -r requirements.txt
           fi
-
+      - name: متطلبات الميوزك
+        run: |          
+          sudo apt-get install -y ffmpeg
 
       - name: بدء السورس
         run: python main.py
